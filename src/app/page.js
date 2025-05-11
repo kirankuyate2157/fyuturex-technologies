@@ -18,5 +18,6 @@ export default function Home() {
       <Testimonials />
       <CallToAction />
     </main>
+    
   );
 }

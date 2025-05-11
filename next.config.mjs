@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    allowedDevOrigins:["*"]
+    reactStrictMode: true,
+    allowedDevOrigins: ["*"],
 };
 
 export default nextConfig;
