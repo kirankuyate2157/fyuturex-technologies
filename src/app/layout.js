@@ -60,21 +60,17 @@ export const metadata = {
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
-  themeColor: "#ffffff",
 };
+
+export const viewport = {
+  themeColor: 'black',
+}
+
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link
-          rel="preload"
-          href="/fonts/geist.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-
         <meta name="keywords" content="HR solutions, tech services, recruitment software, Fyuturex Technologies, HR tech India, modern HR platform" />
         <meta name="author" content="Fyuturex Technologies" />
         <meta name="robots" content="index, follow" />

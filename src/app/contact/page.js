@@ -1,5 +1,6 @@
 import CompanyContactInfo from "@/sections/CompanyContactInfo";
 import ContactForm from "@/sections/ContactForm";
+import MapEmbed from "@/sections/MapEmbed";
 
 export const metadata = {
   title: 'Contact Us',

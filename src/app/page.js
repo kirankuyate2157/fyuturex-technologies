@@ -1,8 +1,15 @@
+
 import AboutPreview from "@/sections/AboutPreview";
 import CallToAction from "@/sections/CallToAction";
 import HeroSection from "@/sections/HeroSection";
 import ServicesOverview from "@/sections/ServicesOverview";
 import Testimonials from "@/sections/Testimonials";
+
+import dynamic from 'next/dynamic';
+
+const HeroSlider = dynamic(() => import('@/sections/HeroSlider'), {
+  // ssr: false,
+});
 
 export const metadata = {
   title: 'Home',
@@ -12,7 +19,8 @@ export const metadata = {
 export default function Home() {
   return (
     <main>
-      <HeroSection />
+      {/* <HeroSection /> */}
+      <HeroSlider/>
       <AboutPreview />
       <ServicesOverview />
       <Testimonials />
