@@ -1,6 +1,7 @@
 
 import AboutPreview from "@/sections/AboutPreview";
 import CallToAction from "@/sections/CallToAction";
+import ContactEMail from "@/sections/ContactEMail";
 import HeroSection from "@/sections/HeroSection";
 import ServicesOverview from "@/sections/ServicesOverview";
 import Testimonials from "@/sections/Testimonials";
@@ -24,7 +25,8 @@ export default function Home() {
       <AboutPreview />
       <ServicesOverview />
       <Testimonials />
-      <CallToAction />
+      {/* <CallToAction /> */}
+      <ContactEMail />
     </main>
     
   );
