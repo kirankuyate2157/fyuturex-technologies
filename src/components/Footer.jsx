@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
         {/* Logo and Description */}
         <div>
-          <h2 className="text-2xl font-bold text-fuchsia-500">FyutureX</h2>
+          <h2 className="text-2xl font-bold text-fuchsia-500">Hirevia</h2>
           <p className="text-gray-700 mt-4">
             Empowering the future of hiring, tech innovation, and digital transformation. Join us on this futuristic journey.
           </p>
@@ -22,7 +22,7 @@ const Footer = () => {
           <p className="text-gray-700 text-sm">
             101 Futurist Lane<br />
             Innovation City, India 400001<br />
-            Email: contact@fyuturex.com<br />
+            Email: contact@hirevia.com<br />
             Phone: +91 98765 43210
           </p>
         </div>
@@ -53,7 +53,7 @@ const Footer = () => {
 
       {/* Partner logos or other optional content */}
       <div className="border-t border-zinc-700 pt-8 mt-8 text-center text-sm text-gray-500">
-        <p>© {new Date().getFullYear()} FyutureX. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Hirevia. All rights reserved.</p>
         <p className="mt-2">Powered by Future Tech & AI Partnerships</p>
       </div>
     </footer>

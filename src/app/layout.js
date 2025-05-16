@@ -29,12 +29,12 @@ export const metadata = {
     "Tech Startup India",
     "Employee Onboarding",
   ],
-  metadataBase: new URL("https://fyuturex.com"),
+  metadataBase: new URL("https://hirevia.com"),
   openGraph: {
     title: "Fyuturex Technologies",
     description:
       "Fyuturex Technologies: Revolutionizing HR with modern tech solutions.",
-    url: "https://fyuturex.com",
+    url: "https://hirevia.com",
     siteName: "Fyuturex Technologies",
     locale: "en_US",
     type: "website",
@@ -53,7 +53,7 @@ export const metadata = {
     description:
       "Your partner in HR automation and tech innovation.",
     images: ["/og/main.jpg"],
-    creator: "@fyuturex",
+    creator: "@hirevia",
   },
   icons: {
     icon: "/favicon.ico",
@@ -83,8 +83,8 @@ export default function RootLayout({ children }) {
         <meta property="og:image:height" content="630" />
 
 
-        <meta name="twitter:site" content="@fyuturex" />
-        <meta name="twitter:creator" content="@fyuturex" />
+        <meta name="twitter:site" content="@hirevia" />
+        <meta name="twitter:creator" content="@hirevia" />
 
         {/* Structured Data: Organization */}
         <script
@@ -94,8 +94,8 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Fyuturex Technologies",
-              url: "https://fyuturex.com",
-              logo: "https://fyuturex.com/logo.png",
+              url: "https://hirevia.com",
+              logo: "https://hirevia.com/logo.png",
               contactPoint: [
                 {
                   "@type": "ContactPoint",
@@ -104,8 +104,8 @@ export default function RootLayout({ children }) {
                 },
               ],
               sameAs: [
-                "https://www.linkedin.com/company/fyuturex",
-                "https://twitter.com/fyuturex",
+                "https://www.linkedin.com/company/hirevia",
+                "https://twitter.com/hirevia",
               ],
             }),
           }}

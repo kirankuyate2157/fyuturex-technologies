@@ -7,7 +7,7 @@ export const metadata = {
     title: "Contact Fyuturex Technologies",
     description:
       "We’d love to hear from you. Reach out for support, partnerships, or service inquiries.",
-    url: "https://fyuturex.com/contact",
+    url: "https://hirevia.com/contact",
     images: ["/og/contact.jpg"],
   },
   twitter: {

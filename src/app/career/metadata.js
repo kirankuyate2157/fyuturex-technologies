@@ -7,7 +7,7 @@ export const metadata = {
     title: "Careers at Fyuturex",
     description:
       "Ready to shape the future of HR tech? Join our dynamic team.",
-    url: "https://fyuturex.com/career",
+    url: "https://hirevia.com/career",
     images: ["/og/career.jpg"],
   },
   twitter: {

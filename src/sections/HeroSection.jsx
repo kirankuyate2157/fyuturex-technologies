@@ -76,7 +76,7 @@
 //           whileInView={{ opacity: 1, y: 0 }}
 //           transition={{ duration: 0.7, delay: 0.2 }}
 //         >
-//           FyutureX Technologies is a forward-thinking technology partner
+//           Hirevia Technologies is a forward-thinking technology partner
 //           delivering innovative digital solutions and enabling access to
 //           exceptional talent. We specialize in integrating advanced IT and AI
 //           strategy with workforce enablement to support sustainable, scalable
@@ -117,7 +117,7 @@
 //               Powering the Future
 //             </span>
 //             <br />
-//             <span className="text-black">of HR Tech with FyutureX</span>
+//             <span className="text-black">of HR Tech with Hirevia</span>
 //           </h1>
 
 //           <p className="mt-6 text-lg sm:text-xl text-gray-300 leading-relaxed">
@@ -169,7 +169,7 @@
 //         transition={{ duration: 0.8, delay: 0.2 }}
 //       >
 //         <p className="text-lg text-gray-300">
-//           FyutureX Technologies is a forward-thinking technology partner delivering
+//           Hirevia Technologies is a forward-thinking technology partner delivering
 //           innovative digital solutions and access to exceptional talent. We specialize
 //           in integrating advanced IT and AI strategy with workforce enablement for
 //           scalable growth and execution-focused innovation.
@@ -207,7 +207,7 @@ export default function HeroSection() {
               Powering the Future
             </span>
             <br />
-            <span className="text-gray-600">of HR Tech with FyutureX</span>
+            <span className="text-gray-600">of HR Tech with Hirevia</span>
           </h1>
 
           <p className="mt-6 text-lg sm:text-xl text-gray-600 leading-relaxed">
@@ -226,7 +226,7 @@ export default function HeroSection() {
             <div className="flex items-start gap-3">
               <Quote className="text-indigo-400 mt-1 w-6 h-6" />
               <p className="text-gray-600 italic text-base sm:text-lg">
-                FyutureX Technologies is a forward-thinking technology partner
+                Hirevia Technologies is a forward-thinking technology partner
                 delivering innovative digital solutions and enabling access to
                 exceptional talent. We align IT and AI strategy with workforce
                 enablement to support scalable, sustainable growth.

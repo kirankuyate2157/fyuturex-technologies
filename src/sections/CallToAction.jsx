@@ -26,7 +26,7 @@ const CallToAction = () => {
           Let’s Build the <span className="text-fuchsia-500">Future</span> Together
         </h2>
         <p className="text-lg md:text-xl text-gray-300">
-          Join us to explore what FyutureX can do for your growth and hiring ecosystem.
+          Join us to explore what Hirevia can do for your growth and hiring ecosystem.
         </p>
       </motion.div>
 

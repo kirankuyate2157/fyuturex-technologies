@@ -8,17 +8,17 @@ const AboutPreview = () => {
     >
       <div className="max-w-6xl mx-auto text-center">
         <h3 className="text-xl md:text-2xl font-semibold text-indigo-600 mb-2">
-          FyutureX Technologies
+          Hirevia Technologies
         </h3>
         <p className="italic text-gray-600 mb-6">
           Innovating Tomorrow, Empowering Talent Today
         </p>
         <div className="text-left md:text-center text-lg leading-relaxed text-gray-700 space-y-6">
           <p>
-            FyutureX Technologies is a forward-thinking technology partner delivering innovative digital solutions and enabling access to exceptional talent. We specialize in integrating advanced IT and AI strategy with workforce enablement to support sustainable, scalable growth.
+            Hirevia Technologies is a forward-thinking technology partner delivering innovative digital solutions and enabling access to exceptional talent. We specialize in integrating advanced IT and AI strategy with workforce enablement to support sustainable, scalable growth.
           </p>
           <blockquote className="bg-indigo-50 border-l-4 border-indigo-500 text-indigo-800 p-4 md:p-6 rounded-md shadow-md italic">
-            “What sets FyutureX apart is our ability to bridge innovation and execution, aligning the right people, processes, and platforms to help organizations thrive in a rapidly evolving digital landscape.”
+            “What sets Hirevia apart is our ability to bridge innovation and execution, aligning the right people, processes, and platforms to help organizations thrive in a rapidly evolving digital landscape.”
           </blockquote>
           <p>
             As a trusted talent and technology partner, we empower businesses to build the capabilities they need to lead the future.

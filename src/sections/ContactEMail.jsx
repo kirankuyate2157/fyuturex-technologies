@@ -184,7 +184,7 @@ const ContactEMail = () => {
           <p
             className={`font-poppins font-normal text-gray-800 dark:text-gray-300 text-[18px] leading-[22.8px] max-w-[470px] mt-5`}
           >
-            At FyutureX, we partner with businesses of all sizes—from innovative
+            At Hirevia, we partner with businesses of all sizes—from innovative
             startups to established enterprises—to bridge technology and talent.
             We bridge technology and talent to power your growth. From startups
             to enterprises, we deliver tailored solutions—be it next-gen

@@ -7,9 +7,9 @@ export const metadata = {
         title: "About Fyuturex Technologies",
         description:
             "Get to know Fyuturex Technologies — a company committed to HR and tech excellence.",
-        url: "https://fyuturex.com/about",
+        url: "https://hirevia.com/about",
         images: [{
-            url: 'https://fyuturex.com/og/about.jpg',
+            url: 'https://hirevia.com/og/about.jpg',
             width: 1200,
             height: 630,
             alt: 'About Fyuturex',

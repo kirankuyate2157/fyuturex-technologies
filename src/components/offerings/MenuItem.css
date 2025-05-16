@@ -1,0 +1,49 @@
+.app__menuitem {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.app__menuitem-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app__menuitem-name {
+  flex: 1;
+}
+
+.app__menuitem-dash {
+  width: 90px;
+  height: 1px;
+  background-color: #aaa;
+  margin: 0 1rem;
+}
+
+.app__menuitem-price {
+  min-width: 75px;
+  text-align: right;
+}
+
+.app__menuitem-sub {
+  margin-top: 0.5rem;
+}
+
+.p__cormorant {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  color: white;
+}
+
+.p__opensans {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.app__subheading-underline {
+  width: 45px;
+  height: 4px;
+  background: #DCCA87;
+  margin-top: 4px;
+}

@@ -9,7 +9,7 @@
 //   {
 //     name: 'Aarav Mehta',
 //     title: 'CTO at Innovatech',
-//     text: 'FyutureX completely transformed how we approach tech and hiring. Their commitment and execution are top-notch.',
+//     text: 'Hirevia completely transformed how we approach tech and hiring. Their commitment and execution are top-notch.',
 //     rating: 5,
 //   },
 //   {
@@ -71,7 +71,7 @@ const testimonials = [
   {
     name: "Aarav Mehta",
     title: "CTO at Innovatech",
-    text: "FyutureX completely transformed how we approach tech and hiring. Their commitment and execution are top-notch.",
+    text: "Hirevia completely transformed how we approach tech and hiring. Their commitment and execution are top-notch.",
     rating: 5,
     image: "https://randomuser.me/api/portraits/men/32.jpg",
   },

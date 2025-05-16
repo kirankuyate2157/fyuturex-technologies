@@ -12,7 +12,7 @@ export const metadata = {
         title: "Fyuturex Services",
         description:
             "We offer cutting-edge HR technology services tailored to modern businesses.",
-        url: "https://fyuturex.com/services",
+        url: "https://hirevia.com/services",
         images: ["/og/services.jpg"],
     },
     twitter: {
