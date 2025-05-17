@@ -1,4 +1,5 @@
 
+import HeroHeader  from "@/components/header/Header";
 import Intro from "@/components/intro/Intro";
 import Offerings from "@/components/offerings/Offerings";
 import WhatHirevia from "@/components/whatHirevia/WhatHirevia";
@@ -23,7 +24,8 @@ export const metadata = {
 export default function Home() {
   return (
     <main>
-      <HeroSection />
+      <HeroHeader/>
+      {/* <HeroSection /> */}
       {/* <HeroSlider/> */}
       <section
   style={{

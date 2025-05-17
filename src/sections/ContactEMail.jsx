@@ -153,12 +153,10 @@ const ContactEMail = () => {
             Ready to innovate and expand your team? Connect with our experts
             today.
           </p>
-         
         </div>
         <div className='md:w-[50%] w-full flex md:flex-row flex-col my-2 md:my-5 md:items-end items-center'>
-          <div className=" flex md:flex-row ">
-
-          <AnimatedTooltip items={people} />
+          <div className=' flex md:flex-row '>
+            <AnimatedTooltip items={people} />
           </div>
           <button
             type='button'
@@ -209,24 +207,27 @@ const ContactEMail = () => {
             Holistic We handle both tech and hiring for seamless execution.
           </p>
         </div>
-        <div
-          className={`md:flex-1  w-full  flex justify-center items-center md:mr-10 mr-0   mt-10 relative  pb-4 md:pb-0`}
-        >
+
+        <div className='md:flex-1  w-full  flex justify-center items-center md:mr-10 mr-0   mt-10 relative  pb-4 md:pb-0 '>
+          {/* Background blur effect */}
           <div
-            className='absolute z-[0] w-[70%] h-[60%] right-[40%] rounded-full opacity-50 bottom-40'
+            className='absolute z-0 w-[80%] h-[60%] md:w-[70%] md:h-[60%] right-[10%] md:right-[40%] rounded-full opacity-50 bottom-40'
             style={{
               background: "linear-gradient(90deg, #8b07f6 40%, #960443 100%)",
               filter: "blur(900px)",
             }}
           />
+
+          {/* Form Container */}
           <form
             onSubmit={handleSubmit}
-            class='z-10 grid grid-cols-1 text-black md:grid-cols-2  gap-4'
+            className='z-10 grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-5xl bg-white/10 p-2 md:p-6 rounded-xl backdrop-blur-md dark:text-white'
           >
-            <div className='mb-4 dark:text-white'>
+            {/* First Name */}
+            <div>
               <label
-                for='firstName'
-                class='block text-sm font-medium text-gray-700 dark:text-gray-300 '
+                htmlFor='firstName'
+                className='block text-sm font-medium text-gray-700 dark:text-gray-300'
               >
                 First Name
               </label>
@@ -236,29 +237,33 @@ const ContactEMail = () => {
                 name='firstName'
                 value={formData.firstName}
                 onChange={handleChange}
-                className='mt-1 p-2 w-full border  border-gray-700 rounded-md dark:bg-[#161A2E]  outline-none focus:outline-none focus:border-purple-500'
+                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161A2E] outline-none focus:outline-none focus:border-purple-500'
               />
             </div>
-            <div className='mb-4 dark:text-white'>
+
+            {/* Last Name */}
+            <div>
               <label
-                for='lastName'
-                class='block text-sm font-medium text-gray-700 dark:text-gray-300'
+                htmlFor='lastName'
+                className='block text-sm font-medium text-gray-700 dark:text-gray-300'
               >
                 Last Name
               </label>
               <input
                 type='text'
                 id='lastName'
+                name='lastName'
                 value={formData.lastName}
                 onChange={handleChange}
-                name='lastName'
-                className='mt-1 p-2 w-full border  border-gray-600 rounded-md dark:bg-[#161A2E]  outline-none focus:outline-none focus:border-purple-500'
+                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161A2E] outline-none focus:outline-none focus:border-purple-500'
               />
             </div>
-            <div className='mb-4 dark:text-white'>
+
+            {/* Email */}
+            <div>
               <label
-                for='email'
-                class='block text-sm font-medium text-gray-700 dark:text-gray-300'
+                htmlFor='email'
+                className='block text-sm font-medium text-gray-700 dark:text-gray-300'
               >
                 Email *
               </label>
@@ -269,13 +274,15 @@ const ContactEMail = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className='mt-1 p-2 w-full border  border-gray-600 rounded-md dark:bg-[#161A2E]  outline-none focus:outline-none focus:border-purple-500'
+                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161A2E] outline-none focus:outline-none focus:border-purple-500'
               />
             </div>
-            <div className='mb-4 dark:text-white'>
+
+            {/* Phone Number */}
+            <div>
               <label
-                for='phoneNumber'
-                class='block text-sm font-medium text-gray-700 dark:text-gray-300'
+                htmlFor='phoneNumber'
+                className='block text-sm font-medium text-gray-700 dark:text-gray-300'
               >
                 Contact Number
               </label>
@@ -285,13 +292,15 @@ const ContactEMail = () => {
                 name='phoneNumber'
                 value={formData.phoneNumber}
                 onChange={handleChange}
-                className='mt-1 p-2 w-full border  border-gray-600 rounded-md dark:bg-[#161A2E]  outline-none focus:outline-none focus:border-purple-500'
+                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161A2E] outline-none focus:outline-none focus:border-purple-500'
               />
             </div>
-            <div className='mb-4 dark:text-white'>
+
+            {/* Company */}
+            <div>
               <label
-                for='company'
-                class='block text-sm font-medium text-gray-700 dark:text-gray-300'
+                htmlFor='company'
+                className='block text-sm font-medium text-gray-700 dark:text-gray-300'
               >
                 Company
               </label>
@@ -301,13 +310,15 @@ const ContactEMail = () => {
                 name='company'
                 value={formData.company}
                 onChange={handleChange}
-                className='mt-1 p-2 w-full border  border-gray-600 rounded-md dark:bg-[#161A2E]  outline-none focus:outline-none focus:border-purple-500'
+                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161A2E] outline-none focus:outline-none focus:border-purple-500'
               />
             </div>
-            <div className='mb-4 dark:text-white'>
+
+            {/* Country */}
+            <div>
               <label
-                for='country'
-                class='block text-sm font-medium text-gray-700 dark:text-gray-300'
+                htmlFor='country'
+                className='block text-sm font-medium text-gray-700 dark:text-gray-300'
               >
                 Country
               </label>
@@ -317,13 +328,15 @@ const ContactEMail = () => {
                 name='country'
                 value={formData.country}
                 onChange={handleChange}
-                className='mt-1 p-2 w-full border  border-gray-600 rounded-md dark:bg-[#161A2E]  outline-none focus:outline-none focus:border-purple-500'
+                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161A2E] outline-none focus:outline-none focus:border-purple-500'
               />
             </div>
-            <div class='col-span-2 mb-4 dark:text-white'>
+
+            {/* Subject */}
+            <div className='col-span-1 sm:col-span-2'>
               <label
-                for='subject'
-                class='block text-sm font-medium text-gray-700 dark:text-gray-300'
+                htmlFor='subject'
+                className='block text-sm font-medium text-gray-700 dark:text-gray-300'
               >
                 Subject *
               </label>
@@ -334,13 +347,15 @@ const ContactEMail = () => {
                 value={formData.subject}
                 onChange={handleChange}
                 required
-                className='mt-1 p-2 w-full border  border-gray-600 rounded-md dark:bg-[#161A2E]  outline-none focus:outline-none focus:border-purple-500'
+                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161A2E] outline-none focus:outline-none focus:border-purple-500'
               />
             </div>
-            <div class='col-span-2 mb-4 dark:text-white'>
+
+            {/* Message */}
+            <div className='col-span-1 sm:col-span-2'>
               <label
-                for='message'
-                class='block text-sm font-medium text-gray-700 dark:text-gray-300'
+                htmlFor='message'
+                className='block text-sm font-medium text-gray-700 dark:text-gray-300'
               >
                 Message *
               </label>
@@ -349,18 +364,21 @@ const ContactEMail = () => {
                 name='message'
                 rows='4'
                 value={formData.message}
-                required
                 onChange={handleChange}
-                className='mt-1 p-2 w-full  border  border-gray-600 rounded-md dark:bg-[#161A2E]  outline-none focus:outline-none focus:border-purple-500'
-              ></textarea>
+                required
+                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161A2E] outline-none focus:outline-none focus:border-purple-500'
+              />
             </div>
 
-            <button
-              type='submit'
-              class='px-4 py-2 bg-purple-00 border bg-purple-400 text-white rounded-md hover:bg-fuchsia-800'
-            >
-              Send Message
-            </button>
+            {/* Submit Button */}
+            <div className='col-span-1 sm:col-span-2 text-center'>
+              <button
+                type='submit'
+                className='px-6 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-700 transition'
+              >
+                Send Message
+              </button>
+            </div>
           </form>
         </div>
       </section>

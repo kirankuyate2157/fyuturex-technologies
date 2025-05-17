@@ -4,7 +4,7 @@ import Feature from './Feature';
 import { FaChevronCircleRight } from 'react-icons/fa';
 
 const WhatHirevia = () => (
-    <div className='px-10'>
+    <div className='p-3 sm:px-10 '>
 
     
     <div className="hirevia__whathirevia section__margin" id="whirevia">
