@@ -1,7 +1,6 @@
 export const metadata = {
-    title: "Services",
-    description:
-        "Explore our services in HR automation, recruitment tech, employee management, and more.",
+    title: 'Our Services | Hirevia',
+  description: 'Explore Hirevia services in HR,Hiring, Bulk Hiring, onboarding automation, SaaS, and AI. Scalable solutions built on robust tech.',
     keywords: [
         "HR automation services",
         "recruitment tech",
