@@ -99,11 +99,11 @@ const Testimonials = () => {
         </h2>
 
         <div className='relative w-full overflow-hidden'>
-          <div className='flex w-full  animate-marquee  duration-[5s] sm:duration-[10s] md:duration-[15s] lg:duration-[15s] pb-4 space-x-8'>
+          <div className='flex w-full  animate-marquee   pb-4 space-x-8'>
             {repeatedTestimonials.map((item, index) => (
               <div
                 key={index}
-                className='relative bg-white border border-gray-100 rounded-[20px] px-8 py-10 shadow-lg hover:shadow-2xl transition-shadow duration-[10s] flex flex-col justify-between min-w-[300px] md:min-w-[360px] max-w-[370px]'
+                className='relative bg-white border border-gray-100 rounded-[20px] px-8 py-10 shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col justify-between min-w-[300px] md:min-w-[360px] max-w-[370px]'
               >
                 <div className='absolute top-4 left-4 text-pink-300 text-4xl opacity-20 z-0'>
                   <FaQuoteLeft />
