@@ -46,7 +46,7 @@ const HeroHeader = () => {
           />
           {/* Left Content */}
           <div className='lg:w-1/2 text-center lg:text-left'>
-            <h1 className=' gradient__text text-4xl md:text-6xl font-bold  mb-6'>
+            <h1 className=' gradient__text text-4xl md:text-6xl font-bold  pb-6'>
               Transforming Business Through Technology & Talent
             </h1>
 
@@ -63,7 +63,7 @@ const HeroHeader = () => {
 
               <Button
                 variant='outline'
-                size='lg'
+               
                 className='text-purple-700 border-purple-900 hover:bg-blue-50 hover:text-blue-800 transition-all duration-300 cursor-pointer'
               >
                 Learn More

@@ -155,3 +155,21 @@
   animation: marquee 30s linear infinite;
 }
 
+
+@media (min-width: 640px) {
+  .animate-marquee {
+    animation-duration: 1s;
+  }
+}
+
+@media (min-width: 768px) {
+  .animate-marquee {
+    animation-duration: 1s;
+  }
+}
+
+@media (min-width: 1024px) {
+  .animate-marquee {
+    animation-duration: 1s;
+  }
+}
