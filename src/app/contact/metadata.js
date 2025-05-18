@@ -1,10 +1,10 @@
 export const metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with Fyuturex Technologies for collaborations, support, or inquiries.",
-  keywords: ["contact Fyuturex", "support", "HR tech contact", "get in touch"],
+    "Get in touch with Hirevia Technologies for collaborations, support, or inquiries.",
+  keywords: ["contact Hirevia", "support", "HR tech contact", "get in touch"],
   openGraph: {
-    title: "Contact Fyuturex Technologies",
+    title: "Contact Hirevia Technologies",
     description:
       "We’d love to hear from you. Reach out for support, partnerships, or service inquiries.",
     url: "https://hirevia.com/contact",
@@ -12,7 +12,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Fyuturex",
+    title: "Contact Hirevia",
     description:
       "Reach out to our team — we're here to support your HR and tech journey.",
     images: ["/og/contact.jpg"],

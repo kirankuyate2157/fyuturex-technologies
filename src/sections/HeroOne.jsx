@@ -24,7 +24,7 @@ export default function HeroOne() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          Fyuturex Technologies builds innovative recruitment and workforce
+          Hirevia Technologies builds innovative recruitment and workforce
           solutions.
         </motion.p>
         <motion.div

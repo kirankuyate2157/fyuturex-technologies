@@ -1,25 +1,25 @@
 export const metadata = {
     title: "About Us",
     description:
-        "Learn about Fyuturex Technologies — our mission, team, and vision for transforming HR and tech.",
-    keywords: ["Fyuturex", "About Fyuturex", "Tech Company", "HR Tech"],
+        "Learn about Hirevia Technologies — our mission, team, and vision for transforming HR and tech.",
+    keywords: ["Hirevia", "About Hirevia", "Tech Company", "HR Tech"],
     openGraph: {
-        title: "About Fyuturex Technologies",
+        title: "About Hirevia Technologies",
         description:
-            "Get to know Fyuturex Technologies — a company committed to HR and tech excellence.",
+            "Get to know Hirevia Technologies — a company committed to HR and tech excellence.",
         url: "https://hirevia.com/about",
         images: [{
             url: 'https://hirevia.com/og/about.jpg',
             width: 1200,
             height: 630,
-            alt: 'About Fyuturex',
+            alt: 'About Hirevia',
         },],
         type: 'website',
     },
     twitter: {
         card: "summary_large_image",
-        title: "About Fyuturex",
-        description: "Meet the team behind Fyuturex Technologies.",
+        title: "About Hirevia",
+        description: "Meet the team behind Hirevia Technologies.",
         images: ["/og/about.jpg"],
     },
 };

@@ -1,10 +1,10 @@
 export const metadata = {
   title: "Careers",
   description:
-    "Join the Fyuturex team — explore exciting career opportunities in HR and tech.",
-  keywords: ["careers", "tech jobs", "HR jobs", "Fyuturex careers"],
+    "Join the Hirevia team — explore exciting career opportunities in HR and tech.",
+  keywords: ["careers", "tech jobs", "HR jobs", "Hirevia careers"],
   openGraph: {
-    title: "Careers at Fyuturex",
+    title: "Careers at Hirevia",
     description:
       "Ready to shape the future of HR tech? Join our dynamic team.",
     url: "https://hirevia.com/career",
@@ -12,7 +12,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Careers at Fyuturex",
+    title: "Careers at Hirevia",
     description: "Apply now and be a part of something meaningful.",
     images: ["/og/career.jpg"],
   },

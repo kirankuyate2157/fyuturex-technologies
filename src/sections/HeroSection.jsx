@@ -11,7 +11,7 @@
 //     //       <span className="text-indigo-600">Modern Tech Solutions</span>
 //     //     </h1>
 //     //     <p className="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
-//     //       Fyuturex Technologies empowers organizations with smart hiring, seamless onboarding, and next-gen HR automation tools.
+//     //       Hirevia Technologies empowers organizations with smart hiring, seamless onboarding, and next-gen HR automation tools.
 //     //     </p>
 //     //     <div className="mt-8 flex justify-center gap-4">
 //     //       <a
@@ -38,7 +38,7 @@
 //             the Future
 //           </h1>
 //           <p className='mt-6 text-lg text-gray-600'>
-//             Fyuturex Technologies brings innovation, automation, and
+//             Hirevia Technologies brings innovation, automation, and
 //             intelligence to your recruitment and HR processes. Simplify hiring,
 //             streamline onboarding, and elevate employee experiences.
 //           </p>

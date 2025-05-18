@@ -4,7 +4,7 @@ import MapEmbed from "@/sections/MapEmbed";
 
 export const metadata = {
   title: 'Contact Us',
-  description: 'Reach out to Fyuturex Technologies for business inquiries, support, or partnerships.',
+  description: 'Reach out to Hirevia Technologies for business inquiries, support, or partnerships.',
 };
 
 export default function ContactPage() {

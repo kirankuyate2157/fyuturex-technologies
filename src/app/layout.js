@@ -16,26 +16,26 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: {
-    default: "Fyuturex Technologies",
-    template: "%s | Fyuturex",
+    default: "Hirevia Technologies",
+    template: "%s | Hirevia",
   },
   description:
-    "Fyuturex Technologies provides cutting-edge HR and tech solutions for modern businesses.",
+    "Hirevia Technologies provides cutting-edge HR and tech solutions for modern businesses.",
   keywords: [
     "HR Tech",
     "Recruitment Solutions",
     "Human Resource Software",
-    "Fyuturex Technologies",
+    "Hirevia Technologies",
     "Tech Startup India",
     "Employee Onboarding",
   ],
   metadataBase: new URL("https://hirevia.com"),
   openGraph: {
-    title: "Fyuturex Technologies",
+    title: "Hirevia Technologies",
     description:
-      "Fyuturex Technologies: Revolutionizing HR with modern tech solutions.",
+      "Hirevia Technologies: Revolutionizing HR with modern tech solutions.",
     url: "https://hirevia.com",
-    siteName: "Fyuturex Technologies",
+    siteName: "Hirevia Technologies",
     locale: "en_US",
     type: "website",
     images: [
@@ -43,13 +43,13 @@ export const metadata = {
         url: "/og/main.jpg",
         width: 1200,
         height: 630,
-        alt: "Fyuturex Technologies - HR Tech",
+        alt: "Hirevia Technologies - HR Tech",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fyuturex Technologies",
+    title: "Hirevia Technologies",
     description:
       "Your partner in HR automation and tech innovation.",
     images: ["/og/main.jpg"],
@@ -71,14 +71,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta name="keywords" content="HR solutions, tech services, recruitment software, Fyuturex Technologies, HR tech India, modern HR platform" />
-        <meta name="author" content="Fyuturex Technologies" />
+        <meta name="keywords" content="HR solutions, tech services, recruitment software, Hirevia Technologies, HR tech India, modern HR platform" />
+        <meta name="author" content="Hirevia Technologies" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Fyuturex Technologies" />
+        <meta property="og:site_name" content="Hirevia Technologies" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
@@ -93,7 +93,7 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Fyuturex Technologies",
+              name: "Hirevia Technologies",
               url: "https://hirevia.com",
               logo: "https://hirevia.com/logo.png",
               contactPoint: [

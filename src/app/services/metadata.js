@@ -5,10 +5,10 @@ export const metadata = {
         "HR automation services",
         "recruitment tech",
         "HR tools",
-        "Fyuturex services",
+        "Hirevia services",
     ],
     openGraph: {
-        title: "Fyuturex Services",
+        title: "Hirevia Services",
         description:
             "We offer cutting-edge HR technology services tailored to modern businesses.",
         url: "https://hirevia.com/services",
@@ -18,7 +18,7 @@ export const metadata = {
         card: "summary_large_image",
         title: "Our Services",
         description:
-            "Discover the innovative solutions offered by Fyuturex Technologies.",
+            "Discover the innovative solutions offered by Hirevia Technologies.",
         images: ["/og/services.jpg"],
     },
 };
