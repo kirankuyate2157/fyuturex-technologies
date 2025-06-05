@@ -10,7 +10,7 @@
 //     //       Revolutionizing HR with <br className="hidden sm:block" />
 //     //       <span className="text-indigo-600">Modern Tech Solutions</span>
 //     //     </h1>
-//     //     <p className="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
+//     //     <p className="mt-6 text-lg    text-gray-600 dark:text-gray-400   max-w-2xl mx-auto">
 //     //       Hirevia Technologies empowers organizations with smart hiring, seamless onboarding, and next-gen HR automation tools.
 //     //     </p>
 //     //     <div className="mt-8 flex justify-center gap-4">
@@ -37,7 +37,7 @@
 //             Transforming <span className='text-indigo-600'>HR Tech</span> for
 //             the Future
 //           </h1>
-//           <p className='mt-6 text-lg text-gray-600'>
+//           <p className='mt-6 text-lg    text-gray-600 dark:text-gray-400  '>
 //             Hirevia Technologies brings innovation, automation, and
 //             intelligence to your recruitment and HR processes. Simplify hiring,
 //             streamline onboarding, and elevate employee experiences.
@@ -71,7 +71,7 @@
 //       <div className='absolute inset-0 bg-grid-white/[0.04] pointer-events-none z-0' />
 //       <div className='relative z-10 max-w-4xl mx-auto px-6 text-center'>
 //         <motion.p
-//           className='text-lg leading-relaxed text-gray-800'
+//           className='text-lg leading-relaxed  text-gray-800 dark:text-gray-200  '
 //           initial={{ opacity: 0, y: 20 }}
 //           whileInView={{ opacity: 1, y: 0 }}
 //           transition={{ duration: 0.7, delay: 0.2 }}
@@ -207,10 +207,10 @@ export default function HeroSection() {
               Powering the Future
             </span>
             <br />
-            <span className="text-gray-600">of HR Tech with Hirevia</span>
+            <span className="   text-gray-600 dark:text-gray-400  ">of HR Tech with Hirevia</span>
           </h1>
 
-          <p className="mt-6 text-lg sm:text-xl text-gray-600 leading-relaxed">
+          <p className="mt-6 text-lg sm:text-xl    text-gray-600 dark:text-gray-400   leading-relaxed">
             Intelligent, scalable, and beautiful HR automation and workforce
             solutions built to help you hire smarter, onboard faster, and grow
             sustainably.
@@ -225,7 +225,7 @@ export default function HeroSection() {
           >
             <div className="flex items-start gap-3">
               <Quote className="text-indigo-400 mt-1 w-6 h-6" />
-              <p className="text-gray-600 italic text-base sm:text-lg">
+              <p className="   text-gray-600 dark:text-gray-400   italic text-base sm:text-lg">
                 Hirevia Technologies is a forward-thinking technology partner
                 delivering innovative digital solutions and enabling access to
                 exceptional talent. We align IT and AI strategy with workforce

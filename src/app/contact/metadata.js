@@ -19,4 +19,16 @@ export const metadata = {
   },
 };
 
+export const metadataX = {
+  title: "Contact Us | Hirevia Technologies",
+  description:
+    "Get in touch with Hirevia Technologies for hiring solutions, business inquiries, or partnership opportunities. Located in Mumbai, India.",
+  keywords: [
+    "Hirevia Contact",
+    "Hirevia Technologies",
+    "Hiring Solutions",
+    "Business Inquiries",
+    "Mumbai Tech Company"
+  ]
+};
 // /public/og/*.jpg images exist and are optimized (~1200x630 px).

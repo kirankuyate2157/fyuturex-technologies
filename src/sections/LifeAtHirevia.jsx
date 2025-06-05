@@ -7,7 +7,7 @@ const LifeAtHirevia = () => {
       <h2 className='text-3xl font-semibold text-purple-700 flex items-center justify-center gap-2'>
         <HeartHandshake /> Life at Hirevia
       </h2>
-      <p className='text-gray-600 max-w-3xl mx-auto'>
+      <p className='   text-gray-600 dark:text-gray-400   max-w-3xl mx-auto'>
         At Hirevia, we believe in innovation, collaboration, and growth. We
         foster a culture where talent is nurtured, ideas are celebrated, and
         each individual contributes to meaningful change.

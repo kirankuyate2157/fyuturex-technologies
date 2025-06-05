@@ -30,7 +30,7 @@ const ServiceCardList = () => {
     <section className="py-16 bg-gray-50 dark:bg-black" id="services">
       <div className="max-w-7xl mx-auto px-4 text-center">
         <motion.h2 
-          className="text-3xl sm:text-4xl font-bold mb-8 text-gray-800 dark:text-white"
+          className="text-3xl sm:text-4xl font-bold mb-8  text-gray-800 dark:text-gray-200   dark:text-white"
           initial={{ opacity: 0, y: -20 }} 
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -46,8 +46,8 @@ const ServiceCardList = () => {
               transition={{ duration: 0.3 }}
             >
               <div className="mb-4 flex justify-center">{service.icon}</div>
-              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">{service.title}</h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">{service.description}</p>
+              <h3 className="text-xl font-semibold  text-gray-800 dark:text-gray-200   dark:text-white mb-2">{service.title}</h3>
+              <p className="   text-gray-600 dark:text-gray-400   dark:text-gray-300 text-sm">{service.description}</p>
             </motion.div>
           ))}
         </div>

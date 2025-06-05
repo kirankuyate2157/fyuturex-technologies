@@ -35,7 +35,7 @@ const TeamSection = () => (
               <AvatarFallback>{member.initials}</AvatarFallback>
             </Avatar>
             <h3 className='text-xl font-semibold text-center'>{member.name}</h3>
-            <p className='text-center text-gray-600'>{member.role}</p>
+            <p className='text-center    text-gray-600 dark:text-gray-400  '>{member.role}</p>
           </motion.div>
         ))}
       </div>

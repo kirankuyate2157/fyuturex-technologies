@@ -19,7 +19,7 @@ const JobOpenings = () => {
             key={index}
             className="p-6 rounded-xl border hover:shadow-lg transition bg-white"
           >
-            <h3 className="text-xl font-bold text-gray-800">{job.title}</h3>
+            <h3 className="text-xl font-bold  text-gray-800 dark:text-gray-200  ">{job.title}</h3>
             <p className="text-sm text-gray-500">{job.location} | {job.type}</p>
             <button className="mt-3 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
               Apply Now

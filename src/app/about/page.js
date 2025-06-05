@@ -39,8 +39,8 @@ export default function About() {
         transition={{ duration: 0.8 }}
         className="max-w-7xl mx-auto text-center mb-12"
       >
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Innovating Tomorrow, Empowering Talent Today</h1>
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+        <h1 className="text-4xl md:text-5xl font-bold  text-gray-800 dark:text-gray-200   mb-4">Innovating Tomorrow, Empowering Talent Today</h1>
+        <p className="text-lg    text-gray-600 dark:text-gray-400   max-w-3xl mx-auto">
           At Hirevia Technologies, we specialize in integrating cutting-edge IT & AI solutions with talent enablement. We deliver scalable technology and recruitment services to power your growth.
         </p>
         <div className="mt-6 flex justify-center gap-4">
@@ -71,7 +71,7 @@ export default function About() {
           }].map((item, idx) => (
             <motion.div key={idx} whileHover={{ scale: 1.05 }} className="bg-white p-6 rounded-xl shadow-lg">
               {item.icon}
-              <h3 className="text-xl font-semibold text-gray-800 mt-4">{item.title}</h3>
+              <h3 className="text-xl font-semibold  text-gray-800 dark:text-gray-200   mt-4">{item.title}</h3>
               <p className="text-sm text-gray-500 mt-2">{item.desc}</p>
             </motion.div>
           ))}
@@ -81,7 +81,7 @@ export default function About() {
       <Separator className="my-12" />
 
       <Section title="Our Vision & Mission" className="mb-12">
-        <motion.p className="max-w-4xl mx-auto text-center text-lg text-gray-600">
+        <motion.p className="max-w-4xl mx-auto text-center text-lg    text-gray-600 dark:text-gray-400  ">
           Hirevia envisions a future where talent and technology converge seamlessly. Our mission is to provide exceptional services that empower organizations to thrive in a digitally connected world.
         </motion.p>
       </Section>
@@ -96,7 +96,7 @@ export default function About() {
 
       <Section title="Join Our Journey">
         <div className="text-center">
-          <p className="text-gray-600 max-w-xl mx-auto mb-4">
+          <p className="   text-gray-600 dark:text-gray-400   max-w-xl mx-auto mb-4">
             Want to be a part of building the future of tech and talent? Let’s grow together.
           </p>
           <Button size="lg">Work With Us</Button>

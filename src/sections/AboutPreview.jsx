@@ -4,16 +4,16 @@ const AboutPreview = () => {
   return (
     <section
       id="about"
-      className="py-16 px-6 md:px-20 bg-white text-gray-800 scroll-mt-20"
+      className="py-16 px-6 md:px-20 bg-white  text-gray-800 dark:text-gray-200   scroll-mt-20"
     >
       <div className="max-w-6xl mx-auto text-center">
         <h3 className="text-xl md:text-2xl font-semibold text-indigo-600 mb-2">
           Hirevia Technologies
         </h3>
-        <p className="italic text-gray-600 mb-6">
+        <p className="italic    text-gray-600 dark:text-gray-400   mb-6">
           Innovating Tomorrow, Empowering Talent Today
         </p>
-        <div className="text-left md:text-center text-lg leading-relaxed text-gray-700 space-y-6">
+        <div className="text-left md:text-center text-lg leading-relaxed    text-gray-700 dark:text-gray-400  space-y-6">
           <p>
             Hirevia Technologies is a forward-thinking technology partner delivering innovative digital solutions and enabling access to exceptional talent. We specialize in integrating advanced IT and AI strategy with workforce enablement to support sustainable, scalable growth.
           </p>

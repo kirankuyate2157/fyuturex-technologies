@@ -5,6 +5,7 @@ import { FaChevronCircleRight } from "react-icons/fa";
 import { MdOutlineWifiCalling } from "react-icons/md";
 import { IoCheckmarkDoneCircle } from "react-icons/io5";
 import { AnimatedTooltip } from "@/components/ui/AnimatedTooltip";
+import { useRouter } from "next/navigation";
 
 const people = [
   {
@@ -62,7 +63,11 @@ const ContactEMail = () => {
     subject: "",
     message: "",
   });
+  const router = useRouter();
 
+  const handleNavigate = () => {
+    router.push("/contact");
+  };
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
@@ -93,47 +98,7 @@ const ContactEMail = () => {
 
   return (
     <div className='sm:p-20 p-10'>
-      {/* <div className=' rounded-2xl bg- w-full p-10 sm:p-5 flex md:flex-row justify-between flex-col  md:items-center border border-purple-600 relative'>
-        <div
-          className='absolute z-[1] w-[60%] h-[60%] right-[40%] rounded-full opacity-40 bottom-40'
-          style={{
-            background: "linear-gradient(90deg, #601d50 40%, #960443 100%)",
-            filter: "blur(900px)",
-          }}
-        />
-        <div className='w-full'>
-          <h1
-            className={`font-poppins font-semibold text-[42px] xs:text-[32px] text-black dark:text-white leading-[56.8px] xs:leading-[40px] w-full`}
-          >
-            Empower Your Future with Technology & Talent
-          </h1>
-          <p
-            className={`font-poppins font-normal text-gray-800 dark:text-gray-300 text-[18px] leading-[28.8px] max-w-[470px] mt-5`}
-          >
-            Leverage cutting-edge solutions and expert staffing to drive your
-            growth.
-          </p>
-          <p
-            className={`font-poppins font-normal text-gray-800 dark:text-gray-300 text-[18px] leading-[28.8px] max-w-[470px] mt-5`}
-          >
-            Ready to innovate and expand your team? Connect with our experts
-            today.
-          </p>
-           <div className=" w-full flex md:flex-row ">
-
-          <AnimatedTooltip items={people} />
-          </div>
-        </div>
-        <div className='w-[80%] flex items-center justify-end'>
-          <button
-            type='button'
-            className='flex  items-center gap-2 text-md hover:bg-purple-400 bg-transparent border border-black dark:border-gray-100 text-purple-600 hover:text-black hover:ease-in hover:duration-300 p-2  px-4 my-5 rounded-lg text-poppins text-normal'
-          >
-            Get in Touch <FaChevronCircleRight className='animate-pulse' />
-          </button>
-        </div>
-      </div> */}
-      <div className='rounded-2xl w-full p-10 sm:p-5 flex md:flex-row justify-between flex-col md:items-center border border-purple-600 relative'>
+      {/* <div className='rounded-2xl w-full p-10 sm:p-5 flex md:flex-row justify-between flex-col md:items-center border border-purple-600 relative'>
         <div
           className='absolute z-[1] w-[60%] h-[60%] right-[40%] rounded-full opacity-40 bottom-40'
           style={{
@@ -145,27 +110,23 @@ const ContactEMail = () => {
           <h1 className='font-poppins font-semibold text-[42px] xs:text-[32px] text-black dark:text-white leading-[56.8px] xs:leading-[40px] w-full'>
             Empower Your Future with Technology & Talent
           </h1>
-          <p className='font-poppins font-normal text-gray-800 dark:text-gray-300 text-[18px] leading-[28.8px] max-w-[470px] mt-5'>
+          <p className='font-poppins font-normal  text-gray-800 dark:text-gray-200   dark:text-gray-300 text-[18px] leading-[28.8px] max-w-[470px] mt-5'>
             Leverage cutting-edge solutions and expert staffing to drive your
             growth.
           </p>
-          <p className='font-poppins font-normal text-gray-800 dark:text-gray-300 text-[18px] leading-[28.8px] max-w-[470px] mt-5'>
+          <p className='font-poppins font-normal  text-gray-800 dark:text-gray-200   dark:text-gray-300 text-[18px] leading-[28.8px] max-w-[470px] mt-5'>
             Ready to innovate and expand your team? Connect with our experts
             today.
           </p>
         </div>
-        <div className='md:w-[50%] w-full flex md:flex-row flex-col my-2 md:my-5 md:items-end items-center'>
-          <div className=' flex md:flex-row '>
-            <AnimatedTooltip items={people} />
-          </div>
-          <button
-            type='button'
-            className='flex items-center  gap-2 text-md hover:bg-purple-400 bg-transparent border border-black dark:border-gray-100 text-purple-600 hover:text-black hover:ease-in hover:duration-300 p-2 px-4 my-2 md:my-5 rounded-lg text-poppins text-normal'
-          >
-            Get in Touch <FaChevronCircleRight className='animate-pulse' />
-          </button>
-        </div>
-      </div>
+        <button
+          type='button'
+          onClick={handleNavigate}
+          className='flex items-center w-full max-w-[150px] gap-2 text-md hover:bg-purple-400 bg-transparent border border-black dark:border-gray-100 text-purple-600 hover:text-black hover:ease-in hover:duration-300 p-2 px-4 my-2 md:my-5 rounded-lg text-poppins text-normal'
+        >
+          Get in Touch <FaChevronCircleRight className='animate-pulse' />
+        </button>
+      </div> */}
       <div className=' w-full my-10  text-2xl flex justify-center'>
         <h2 className=' z-20 text-primary font-semibold p-2 px-5 rounded-xl flex  items-center gap-5'>
           Contact Now
@@ -180,7 +141,7 @@ const ContactEMail = () => {
             Your Vision, Our Expertise!
           </h1>
           <p
-            className={`font-poppins font-normal text-gray-800 dark:text-gray-300 text-[18px] leading-[22.8px] max-w-[470px] mt-5`}
+            className={`font-poppins font-normal  text-gray-800    dark:text-gray-300 text-[18px] leading-[22.8px] max-w-[470px] mt-5`}
           >
             At Hirevia, we partner with businesses of all sizes—from innovative
             startups to established enterprises—to bridge technology and talent.
@@ -189,19 +150,19 @@ const ContactEMail = () => {
             software or top-tier professionals.
           </p>
           <p
-            className={`font-poppins flex items-center gap-2  font-normal text-gray-800 dark:text-gray-300 text-[15px] leading-[22.8px] max-w-[470px] mt-5`}
+            className={`font-poppins flex items-center gap-2  font-normal  text-gray-800    dark:text-gray-300 text-[15px] leading-[22.8px] max-w-[470px] mt-5`}
           >
             <IoCheckmarkDoneCircle className='text-purple-700 text-lg' />
             Leverage smart tech to streamline operations
           </p>
           <p
-            className={`font-poppins flex items-center gap-2 font-normal text-gray-800 dark:text-gray-300 text-[15px] leading-[22.8px] max-w-[470px] mt-2`}
+            className={`font-poppins flex items-center gap-2 font-normal  text-gray-800    dark:text-gray-300 text-[15px] leading-[22.8px] max-w-[470px] mt-2`}
           >
             <IoCheckmarkDoneCircle className='text-purple-700 text-lg' />
             Access skilled professionals who align with your goals.
           </p>
           <p
-            className={`font-poppins flex items-center gap-2  font-normal text-gray-800 dark:text-gray-300 text-[15px] leading-[22.8px] max-w-[470px] mt-2`}
+            className={`font-poppins flex items-center gap-2  font-normal  text-gray-800    dark:text-gray-300 text-[15px] leading-[22.8px] max-w-[470px] mt-2`}
           >
             <IoCheckmarkDoneCircle className='text-purple-700 text-xl' />{" "}
             Holistic We handle both tech and hiring for seamless execution.
@@ -227,7 +188,7 @@ const ContactEMail = () => {
             <div>
               <label
                 htmlFor='firstName'
-                className='block text-sm font-medium text-gray-700 dark:text-gray-300'
+                className='block text-sm font-medium    text-gray-700 dark:text-gray-400  dark:text-gray-300'
               >
                 First Name
               </label>
@@ -237,7 +198,7 @@ const ContactEMail = () => {
                 name='firstName'
                 value={formData.firstName}
                 onChange={handleChange}
-                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161A2E] outline-none focus:outline-none focus:border-purple-500'
+                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161a2e48] outline-none focus:outline-none focus:border-purple-500'
               />
             </div>
 
@@ -245,7 +206,7 @@ const ContactEMail = () => {
             <div>
               <label
                 htmlFor='lastName'
-                className='block text-sm font-medium text-gray-700 dark:text-gray-300'
+                className='block text-sm font-medium    text-gray-700 dark:text-gray-400  dark:text-gray-300'
               >
                 Last Name
               </label>
@@ -255,7 +216,7 @@ const ContactEMail = () => {
                 name='lastName'
                 value={formData.lastName}
                 onChange={handleChange}
-                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161A2E] outline-none focus:outline-none focus:border-purple-500'
+                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161a2e48]  outline-none focus:outline-none focus:border-purple-500'
               />
             </div>
 
@@ -263,7 +224,7 @@ const ContactEMail = () => {
             <div>
               <label
                 htmlFor='email'
-                className='block text-sm font-medium text-gray-700 dark:text-gray-300'
+                className='block text-sm font-medium    text-gray-700 dark:text-gray-400  dark:text-gray-300'
               >
                 Email *
               </label>
@@ -274,7 +235,7 @@ const ContactEMail = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161A2E] outline-none focus:outline-none focus:border-purple-500'
+                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161a2e48]  outline-none focus:outline-none focus:border-purple-500'
               />
             </div>
 
@@ -282,7 +243,7 @@ const ContactEMail = () => {
             <div>
               <label
                 htmlFor='phoneNumber'
-                className='block text-sm font-medium text-gray-700 dark:text-gray-300'
+                className='block text-sm font-medium    text-gray-700 dark:text-gray-400  dark:text-gray-300'
               >
                 Contact Number
               </label>
@@ -292,7 +253,7 @@ const ContactEMail = () => {
                 name='phoneNumber'
                 value={formData.phoneNumber}
                 onChange={handleChange}
-                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161A2E] outline-none focus:outline-none focus:border-purple-500'
+                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161a2e48]  outline-none focus:outline-none focus:border-purple-500'
               />
             </div>
 
@@ -300,7 +261,7 @@ const ContactEMail = () => {
             <div>
               <label
                 htmlFor='company'
-                className='block text-sm font-medium text-gray-700 dark:text-gray-300'
+                className='block text-sm font-medium    text-gray-700 dark:text-gray-400  dark:text-gray-300'
               >
                 Company
               </label>
@@ -310,7 +271,7 @@ const ContactEMail = () => {
                 name='company'
                 value={formData.company}
                 onChange={handleChange}
-                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161A2E] outline-none focus:outline-none focus:border-purple-500'
+                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161a2e48]  outline-none focus:outline-none focus:border-purple-500'
               />
             </div>
 
@@ -318,7 +279,7 @@ const ContactEMail = () => {
             <div>
               <label
                 htmlFor='country'
-                className='block text-sm font-medium text-gray-700 dark:text-gray-300'
+                className='block text-sm font-medium    text-gray-700 dark:text-gray-400  dark:text-gray-300'
               >
                 Country
               </label>
@@ -328,7 +289,7 @@ const ContactEMail = () => {
                 name='country'
                 value={formData.country}
                 onChange={handleChange}
-                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161A2E] outline-none focus:outline-none focus:border-purple-500'
+                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161a2e48]  outline-none focus:outline-none focus:border-purple-500'
               />
             </div>
 
@@ -336,7 +297,7 @@ const ContactEMail = () => {
             <div className='col-span-1 sm:col-span-2'>
               <label
                 htmlFor='subject'
-                className='block text-sm font-medium text-gray-700 dark:text-gray-300'
+                className='block text-sm font-medium    text-gray-700 dark:text-gray-400  dark:text-gray-300'
               >
                 Subject *
               </label>
@@ -347,7 +308,7 @@ const ContactEMail = () => {
                 value={formData.subject}
                 onChange={handleChange}
                 required
-                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161A2E] outline-none focus:outline-none focus:border-purple-500'
+                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161a2e48]  outline-none focus:outline-none focus:border-purple-500'
               />
             </div>
 
@@ -355,7 +316,7 @@ const ContactEMail = () => {
             <div className='col-span-1 sm:col-span-2'>
               <label
                 htmlFor='message'
-                className='block text-sm font-medium text-gray-700 dark:text-gray-300'
+                className='block text-sm font-medium    text-gray-700 dark:text-gray-400  dark:text-gray-300'
               >
                 Message *
               </label>
@@ -366,7 +327,7 @@ const ContactEMail = () => {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161A2E] outline-none focus:outline-none focus:border-purple-500'
+                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161a2e48]  outline-none focus:outline-none focus:border-purple-500'
               />
             </div>
 

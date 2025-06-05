@@ -34,7 +34,7 @@ const HeroHeader = () => {
   }, []);
 
   return (
-    <div className='min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 px-4 md:px-12 py-10'>
+    <div className='min-h-screen px-4 md:px-12 py-10  bg-[#151829]  text-white '>
       <div className='container relative mx-auto px-4 py-10'>
         <div className='flex flex-col lg:flex-row items-center justify-between gap-12 '>
           <div
@@ -45,42 +45,50 @@ const HeroHeader = () => {
             }}
           />
           {/* Left Content */}
+
           <div className='lg:w-1/2 text-center lg:text-left'>
             <h1 className=' gradient__text text-4xl md:text-6xl font-bold  pb-6'>
               Transforming Business Through Technology & Talent
             </h1>
 
-            <p className='text-lg md:text-xl text-gray-700 mb-8'>
-              Bridging the gap between innovation and execution by delivering
-              modern tech and helping businesses hire exceptional people.
+            <p className='text-lg md:text-xl text-gray-700 dark:text-gray-400 mb-8'>
+              Hirevia Bridging the gap between innovation and execution by
+              delivering modern tech and helping businesses hire exceptional
+              people to achieve scalable growth.
             </p>
 
-            <div className='flex flex-col sm:flex-row justify-center lg:justify-start gap-4 mb-8'>
-              <Button className='flex items-center justify-center  gap-2 text-md cursor-pointer border border-black dark:border-white text-purple-700 bg-purple-100 hover:bg-purple-300 hover:text-black transition-all duration-300 ease-in-out px-4 py-2 rounded-lg font-medium'>
-                Get Started{" "}
-                <FaChevronCircleRight className='animate-pulse cursor-pointer text-lg' />
-              </Button>
-
+            {/* <div className='flex flex-col sm:flex-row justify-center lg:justify-start gap-4 mb-8'>
+              <a href='#who_we'>
+                <Button className='flex items-center justify-center  gap-2 text-md cursor-pointer border border-black dark:border-white text-purple-700 bg-purple-100 hover:bg-purple-300 hover:text-black transition-all duration-300 ease-in-out px-4 py-2 rounded-lg font-medium'>
+                  Get Started{" "}
+                  <FaChevronCircleRight className='animate-pulse cursor-pointer text-lg' />
+                </Button>
+              </a>
               <Button
                 variant='outline'
-               
+                onClick={() => {
+                  const target = document.getElementById("who_we");
+                  if (target) {
+                    target.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
                 className='text-purple-700 border-purple-900 hover:bg-blue-50 hover:text-blue-800 transition-all duration-300 cursor-pointer'
               >
                 Learn More
               </Button>
-            </div>
+            </div> */}
 
             <div className='flex flex-wrap justify-center lg:justify-start gap-6'>
               <div className='flex items-center gap-2 text-purple-600'>
                 <FiUsers className='text-xl' />
                 <span className='text-sm md:text-lg font-semibold'>
-                  1,600+ Clients
+                  4+ Clients
                 </span>
               </div>
               <div className='flex items-center gap-2 text-purple-600'>
                 <FiServer className='text-xl' />
                 <span className='text-sm md:text-lg font-semibold'>
-                  10+ Years Experience
+                  2+ Years Experience
                 </span>
               </div>
             </div>
@@ -121,10 +129,10 @@ const HeroHeader = () => {
               <div className='flex items-start gap-3'>
                 <FiCode className='text-xl text-purple-600 mt-1' />
                 <div>
-                  <h4 className='font-semibold text-gray-800'>
+                  <h4 className='font-semibold  text-gray-800 dark:text-gray-200  '>
                     Tech Consulting
                   </h4>
-                  <p className='text-sm text-gray-600'>
+                  <p className='text-sm    text-gray-600 dark:text-gray-400   '>
                     We develop scalable apps & systems tailored for business
                     growth.
                   </p>
@@ -133,8 +141,10 @@ const HeroHeader = () => {
               <div className='flex items-start gap-3'>
                 <FiBriefcase className='text-xl text-purple-600 mt-1' />
                 <div>
-                  <h4 className='font-semibold text-gray-800'>Talent Hiring</h4>
-                  <p className='text-sm text-gray-600'>
+                  <h4 className='font-semibold  text-gray-800 dark:text-gray-200   '>
+                    Talent Hiring
+                  </h4>
+                  <p className='text-sm    text-gray-600 dark:text-gray-400  '>
                     We connect companies with the right developers and teams.
                   </p>
                 </div>
@@ -142,10 +152,10 @@ const HeroHeader = () => {
               <div className='flex items-start gap-3'>
                 <FiCheckCircle className='text-xl text-purple-600 mt-1' />
                 <div>
-                  <h4 className='font-semibold text-gray-800'>
+                  <h4 className='font-semibold  text-gray-800 dark:text-gray-200   '>
                     Smooth Collaboration
                   </h4>
-                  <p className='text-sm text-gray-600'>
+                  <p className='text-sm    text-gray-600 dark:text-gray-400  '>
                     Our video showcases teamwork & sync in real-time.
                   </p>
                 </div>
@@ -153,10 +163,10 @@ const HeroHeader = () => {
               <div className='flex items-start gap-3'>
                 <FiUsers className='text-xl text-purple-600 mt-1' />
                 <div>
-                  <h4 className='font-semibold text-gray-800'>
+                  <h4 className='font-semibold  text-gray-800 dark:text-gray-200   '>
                     Global Partnerships
                   </h4>
-                  <p className='text-sm text-gray-600'>
+                  <p className='text-sm    text-gray-600 dark:text-gray-400  '>
                     We proudly serve global clients with dedication & trust.
                   </p>
                 </div>
