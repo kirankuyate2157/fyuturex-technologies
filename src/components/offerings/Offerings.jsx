@@ -462,10 +462,10 @@ const Offerings = () => {
     <section className="relative z-10 py-20 px-6 overflow-hidden bg-gradient-to-br from-[#e0f7ff] via-[#f2f4ff] to-[#f0f0fa] dark:from-[#0f172a] dark:via-[#1e293b] dark:to-[#0f172a]">
       <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-blue-300/20 via-transparent to-transparent animate-pulse"></div>
                   <div
-            className='absolute z-0 w-[80%] h-[60%] md:w-[70%] md:h-[60%] right-[10%] md:right-[40%] rounded-full opacity-50 bottom-40'
+            className='absolute z-0 w-[80%] h-[60%] md:w-[70%] md:h-[60%] right-[10%] md:right-[40%] rounded-full opacity-30 bottom-40'
             style={{
               background: "linear-gradient(90deg, #8b07f6 40%, #960443 100%)",
-              filter: "blur(900px)",
+              filter: "blur(1200px)",
             }}
           />  
       <div className="max-w-7xl mx-auto text-center space-y-5 mb-10">

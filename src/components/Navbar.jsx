@@ -254,6 +254,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
+import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -317,6 +318,7 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
+          <ThemeToggle />
         </nav>
 
         {/* CTA */}

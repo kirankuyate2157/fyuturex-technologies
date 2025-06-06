@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-import { Quicksand } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 
-const quicksand = Quicksand({
+const quicksand = Roboto({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'], // Add weights you need
   variable: '--font-quicksand',
@@ -102,7 +102,7 @@ export default function RootLayout({ children }) {
           href='https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap'
           rel='stylesheet'
         ></link>
-        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet"></link>
 
         {/* Structured Data: Organization */}
         <script
@@ -139,7 +139,7 @@ export default function RootLayout({ children }) {
       </head>
       <body
         lang="en"
-        className={` ${geistMono.variable} dark antialiased bg-white text-black`}
+        className={` ${geistMono.variable}  antialiased bg-white text-black`}
       >
         <Navbar />
         {children}
