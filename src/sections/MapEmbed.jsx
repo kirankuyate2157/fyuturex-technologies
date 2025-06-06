@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const MapEmbed = () => {
   return (
     <motion.section
-      className="mt-16 rounded-xl overflow-hidden shadow-xl mx-auto md:px-20 px-10"
+      className="mt-16 rounded-xl overflow-hidden shadow-xl mx-auto md:px-20 px-5"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
     >

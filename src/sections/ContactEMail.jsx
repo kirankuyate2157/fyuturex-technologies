@@ -6,6 +6,7 @@ import { MdOutlineWifiCalling } from "react-icons/md";
 import { IoCheckmarkDoneCircle } from "react-icons/io5";
 import { AnimatedTooltip } from "@/components/ui/AnimatedTooltip";
 import { useRouter } from "next/navigation";
+import { sendMail } from "./apis";
 
 const people = [
   {
@@ -91,13 +92,15 @@ const ContactEMail = () => {
         company: "",
         country: "",
         subject: "",
+        coverLetter: "",
+        resume: "",
         message: "",
       });
     }, 4000);
   };
 
   return (
-    <div className='sm:p-20 p-10'>
+    <div className='sm:p-20 p-1'>
       {/* <div className='rounded-2xl w-full p-10 sm:p-5 flex md:flex-row justify-between flex-col md:items-center border border-purple-600 relative'>
         <div
           className='absolute z-[1] w-[60%] h-[60%] right-[40%] rounded-full opacity-40 bottom-40'
@@ -182,13 +185,13 @@ const ContactEMail = () => {
           {/* Form Container */}
           <form
             onSubmit={handleSubmit}
-            className='z-10 grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-5xl bg-white/10 p-2 md:p-6 rounded-xl backdrop-blur-md dark:text-white'
+            className='z-10 grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-5xl bg-white/10 p-4 md:p-6 rounded-xl backdrop-blur-md dark:text-white'
           >
             {/* First Name */}
             <div>
               <label
                 htmlFor='firstName'
-                className='block text-sm font-medium    text-gray-700 dark:text-gray-400  dark:text-gray-300'
+                className='block text-sm font-medium    text-gray-700 dark:text-gray-400  '
               >
                 First Name
               </label>
@@ -206,7 +209,7 @@ const ContactEMail = () => {
             <div>
               <label
                 htmlFor='lastName'
-                className='block text-sm font-medium    text-gray-700 dark:text-gray-400  dark:text-gray-300'
+                className='block text-sm font-medium    text-gray-700 dark:text-gray-400  '
               >
                 Last Name
               </label>
@@ -224,7 +227,7 @@ const ContactEMail = () => {
             <div>
               <label
                 htmlFor='email'
-                className='block text-sm font-medium    text-gray-700 dark:text-gray-400  dark:text-gray-300'
+                className='block text-sm font-medium    text-gray-700 dark:text-gray-400  '
               >
                 Email *
               </label>
@@ -243,7 +246,7 @@ const ContactEMail = () => {
             <div>
               <label
                 htmlFor='phoneNumber'
-                className='block text-sm font-medium    text-gray-700 dark:text-gray-400  dark:text-gray-300'
+                className='block text-sm font-medium    text-gray-700 dark:text-gray-400  '
               >
                 Contact Number
               </label>
@@ -261,7 +264,7 @@ const ContactEMail = () => {
             <div>
               <label
                 htmlFor='company'
-                className='block text-sm font-medium    text-gray-700 dark:text-gray-400  dark:text-gray-300'
+                className='block text-sm font-medium    text-gray-700 dark:text-gray-400  '
               >
                 Company
               </label>
@@ -270,24 +273,6 @@ const ContactEMail = () => {
                 id='company'
                 name='company'
                 value={formData.company}
-                onChange={handleChange}
-                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161a2e48]  outline-none focus:outline-none focus:border-purple-500'
-              />
-            </div>
-
-            {/* Country */}
-            <div>
-              <label
-                htmlFor='country'
-                className='block text-sm font-medium    text-gray-700 dark:text-gray-400  dark:text-gray-300'
-              >
-                Country
-              </label>
-              <input
-                type='text'
-                id='country'
-                name='country'
-                value={formData.country}
                 onChange={handleChange}
                 className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161a2e48]  outline-none focus:outline-none focus:border-purple-500'
               />
@@ -330,7 +315,42 @@ const ContactEMail = () => {
                 className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161a2e48]  outline-none focus:outline-none focus:border-purple-500'
               />
             </div>
-
+            {/* Country */}
+            <div>
+              <label
+                htmlFor='country'
+                className='block text-sm font-medium    text-gray-700 dark:text-gray-400  '
+              >
+                Resume URL
+              </label>
+              <input
+                type='url'
+                id='resume'
+                name='resume'
+                value={formData.resume}
+                onChange={handleChange}
+                placeholder='https://example.com/resume.pdf'
+                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161a2e48]  outline-none focus:outline-none focus:border-purple-500'
+              />
+            </div>
+            {/* Country */}
+            <div>
+              <label
+                htmlFor='country'
+                className='block text-sm font-medium    text-gray-700 dark:text-gray-400  '
+              >
+                Cover Letter URL
+              </label>
+              <input
+                type='url'
+                id='coverLetter'
+                name='coverLetter'
+                value={formData.coverLetter}
+                onChange={handleChange}
+                placeholder='https://example.com/coverletter.pdf'
+                className='mt-1 p-2 w-full border border-gray-700 rounded-md dark:bg-[#161a2e48]  outline-none focus:outline-none focus:border-purple-500'
+              />
+            </div>
             {/* Submit Button */}
             <div className='col-span-1 sm:col-span-2 text-center'>
               <button

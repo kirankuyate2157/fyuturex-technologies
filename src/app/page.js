@@ -29,7 +29,7 @@ export default function Home() {
       className="min-h-screen   h-full bg-[#151829]  text-white"
       style={{
         backgroundImage:
-          "linear-gradient(to left, #960443, #7c134d, #601d50, #44214b, #2c2040, #231e39, #1c1c32, #16192a, #16192a, #161829, #151829, #151829,#653483, #823731 #601d50, #44214b)",
+          "linear-gradient(to bottom, #960443, #7c134d, #601d50, #44214b, #2c2040, #231e39, #1c1c32, #16192a, #16192a, #161829, #151829, #151829,#653483, #823731 #601d50, #44214b)",
       }}>
       <HeroHeader />
       {/* <HeroSection /> */}
@@ -88,11 +88,11 @@ export default function Home() {
             <h1 className='font-poppins font-semibold text-[42px] xs:text-[32px] text-black dark:text-white leading-[56.8px] xs:leading-[40px] w-full'>
               Empower Your Future with Technology & Talent
             </h1>
-            <p className='font-poppins font-normal  text-gray-800 dark:text-gray-200   dark:text-gray-300 text-[18px] leading-[28.8px] max-w-[470px] mt-5'>
+            <p className='font-poppins font-normal  text-gray-800 dark:text-gray-200    text-[18px] leading-[28.8px] max-w-[470px] mt-5'>
               Leverage cutting-edge solutions and expert staffing to drive your
               growth.
             </p>
-            <p className='font-poppins font-normal  text-gray-800 dark:text-gray-200   dark:text-gray-300 text-[18px] leading-[28.8px] max-w-[470px] mt-5'>
+            <p className='font-poppins font-normal  text-gray-800 dark:text-gray-200    text-[18px] leading-[28.8px] max-w-[470px] mt-5'>
               Ready to innovate and expand your team? Connect with our experts
               today.
             </p>

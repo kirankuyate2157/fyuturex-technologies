@@ -1,5 +1,5 @@
 export const sendMail = (toMail, data) => {
-  const greeting = "Dear Kiran K. ";
+  const greeting = "Dear Hirevia Team. ";
 
   const page = `
   <!DOCTYPE html>
@@ -7,7 +7,7 @@ export const sendMail = (toMail, data) => {
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Feedback Contact from Kways page</title>
+    <title>Feedback/Contact from Hirevia page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type="text/css">
       .banner {
@@ -54,6 +54,7 @@ export const sendMail = (toMail, data) => {
         text-decoration: none;
       }
       .footer {
+      margin-top:5px;
         font-size: 8px;
         color: #999;
         margin-top: 10px;
@@ -62,13 +63,13 @@ export const sendMail = (toMail, data) => {
   </head>
   <body>
     <div class="banner">
-      <h2>New Feedback or Contact Form Kways landing page Submission${
+      <h2>New Feedback or Contact Form Hirevia landing page Submission${
         data.firstName ? ` ${data.firstName}` : ""
       }! </h2>
     </div>
     <div class="content">
       <p class="title">${greeting}</p>
-      <p class="details">A new contact form has been submitted on the Kways Company landing page. Here are the details:</p>
+      <p class="details">A new contact form has been submitted on the Hirevia Company landing page. Here are the details:</p>
 
       <p class="details">Subject: ${data?.subject}</p>
       <p class="details">Person Name: ${data?.firstName} ${data?.lastName}</p>
@@ -77,21 +78,23 @@ export const sendMail = (toMail, data) => {
   }</a></p>
       <p class="details">Phone Number: ${data?.phoneNumber}</p>
       <p class="details">Company: ${data?.company}</p>
-      <p class="details">Country: ${data?.country}</p>
+   
+      <p class="details">Resume: ${data?.resume}</p>
+       <p class="details">cover letter: ${data?.coverLetter}</p>
       <p class="details">Message: ${data?.message}</p>
      
       <p class="details">Please review and respond to the users inquiry at your earliest convenience. </p>
       <p class="details2">Best Regard </p>
-      <p class="details">kways auto mail api </p>
+      <p class="details">Kways Notify </p>
       <p class="footer">⚠️ This email is sent from an automated API system. Please do not reply to this email as it is not monitored.</p>
     </div>
   </body>
   </html>`;
 
-  const url = "https://refine-dashboard-qxpf.onrender.com/api/v1/senttomail";
+  const url = "https://refine-dashboard-qxpf.onrender.com/api/v1/senttomail/hirevia";
   const dataInfo = {
     to: toMail,
-    subject: "Feedback from Kways landing page..",
+    subject: "Feedback from Hirevia landing page..",
     text: greeting,
     html: page,
   };

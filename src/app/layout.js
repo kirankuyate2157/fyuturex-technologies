@@ -4,15 +4,25 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Script from "next/script";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+import { Quicksand } from 'next/font/google';
+
+const quicksand = Quicksand({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'], // Add weights you need
+  variable: '--font-quicksand',
+  display: 'swap',
+});
+
 
 export const metadata = {
   title: {
@@ -69,7 +79,8 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+   <html lang="en" className={`${quicksand.variable} ${geistMono.variable}`}>
+
       <head>
         <meta name="keywords" content="HR solutions, tech services, recruitment software, Hirevia Technologies, HR tech India, modern HR platform" />
         <meta name="author" content="Hirevia Technologies" />
@@ -85,6 +96,13 @@ export default function RootLayout({ children }) {
 
         <meta name="twitter:site" content="@hirevia" />
         <meta name="twitter:creator" content="@hirevia" />
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin="" />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap'
+          rel='stylesheet'
+        ></link>
+        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"></link>
 
         {/* Structured Data: Organization */}
         <script
@@ -110,10 +128,18 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
+        <Script id='theme-switcher' strategy='beforeInteractive'>
+          {`if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+          } else {
+            document.documentElement.classList.remove('dark')
+          }
+          `}
+        </Script>
       </head>
       <body
         lang="en"
-        className={`${geistSans.variable} ${geistMono.variable} dark antialiased bg-white text-black`}
+        className={` ${geistMono.variable} dark antialiased bg-white text-black`}
       >
         <Navbar />
         {children}
@@ -132,6 +158,7 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-XXXXXXX');
           `}
         </Script>
+
       </body>
     </html>
   );
