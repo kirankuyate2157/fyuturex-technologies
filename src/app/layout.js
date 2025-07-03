@@ -79,7 +79,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-   <html lang="en" className={`${quicksand.variable} ${geistMono.variable}`}>
+    <html lang="en" className={`${quicksand.variable} ${geistMono.variable}`}>
 
       <head>
         <meta name="keywords" content="HR solutions, tech services, recruitment software, Hirevia Technologies, HR tech India, modern HR platform" />
@@ -98,11 +98,11 @@ export default function RootLayout({ children }) {
         <meta name="twitter:creator" content="@hirevia" />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin="" />
-        <link
+        {/* <link
           href='https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap'
           rel='stylesheet'
         ></link>
-        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet"></link> */}
 
         {/* Structured Data: Organization */}
         <script

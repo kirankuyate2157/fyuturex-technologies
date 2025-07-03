@@ -105,9 +105,9 @@ export default function Services() {
 
       {/* CTA Section */}
       <section className="text-center py-16 px-6 bg-gradient-to-r from-[var(--color-primary)] to-violet-600 dark:from-violet-800 dark:to-fuchsia-800 text-white rounded-xl max-w-6xl mx-auto shadow-md">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Grow with Us?</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">{"Ready to Grow with Us?"}</h2>
         <p className="mb-6 text-lg max-w-2xl mx-auto">
-          Whether you're hiring, innovating, or accelerating your career path—Hirevia is your partner for transformative success.
+          {"Whether you're hiring, innovating, or accelerating your career path—Hirevia is your partner for transformative success."}
         </p>
         <a href="/contact" className="inline-block">
           <button className="px-6 py-3 bg-white text-[var(--color-primary)] font-semibold rounded-full hover:bg-slate-100 dark:text-black transition">
