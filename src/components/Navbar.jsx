@@ -44,7 +44,7 @@ export default function Navbar() {
         }}
       />
 
-      <div className="relative z-10  mx-auto px-4 max-w-8xl sm:px-6 lg:px-14 py-4 flex justify-between items-center">
+      <div className="relative z-10  mx-auto px-4 max-w-8xl sm:px-6 lg:px-16 lg:pr-20 py-4 flex justify-between items-center">
         {/* Logo Image */}
         <Link href="/" className="flex items-center gap-2">
           <div className="relative w-32 h-12">
@@ -59,7 +59,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex gap-6">
+        <nav className="hidden md:flex gap-6 pr-6">
           {navLinks.map((link) => (
             <Link
               key={link.name}
