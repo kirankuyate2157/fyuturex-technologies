@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
 import React from "react";
 import "./whatHirevia.css";
 import Feature from "./Feature";
 import { FaChevronCircleRight } from "react-icons/fa";
 
-import { useRouter } from 'next/navigation';
+import { useRouter } from "next/navigation";
 const WhatHirevia = () => {
   const router = useRouter();
 
@@ -30,7 +30,10 @@ const WhatHirevia = () => {
           <button
             type='button'
             onClick={handleNavigate}
-            className='flex items-center  gap-2 text-md hover:bg-purple-400 bg-purple-300 border border-black dark:border-gray-100 text-purple-600 hover:text-black hover:ease-in hover:duration-300 p-2 px-4 my-2 md:my-5 rounded-lg text-poppins text-normal'
+            className='flex items-center gap-2 text-md font-medium px-5 py-2 rounded-lg my-2 md:my-5
+             bg-[#3ABEFF] text-black border border-[#3ABEFF]
+             hover:bg-[#2CAEDB] hover:text-white
+             transition-all duration-300'
           >
             Discover our services{" "}
             <FaChevronCircleRight className='animate-pulse' />

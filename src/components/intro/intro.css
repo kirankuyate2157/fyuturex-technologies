@@ -25,7 +25,8 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 2px solid rgb(225, 0, 255);
+  border: 2px solid var(--color-primary-light);
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,4 +37,5 @@
 
 .app__video-overlay_circle:hover {
   transform: scale(1.1);
+  border-color: var(--color-hover);
 }
