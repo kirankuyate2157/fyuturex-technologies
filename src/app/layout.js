@@ -29,6 +29,12 @@ export const metadata = {
     default: "Hirevia Technologies",
     template: "%s | Hirevia",
   },
+  icons: {
+    icon: "/favicon.ico",          // General browsers
+    shortcut: "/favicon.png",      // Shortcuts
+    apple: "/apple-touch-icon.png" // iOS devices
+  },
+  manifest: "/site.webmanifest",
   description:
     "Hirevia Technologies provides cutting-edge HR and tech solutions for modern businesses.",
   keywords: [
@@ -39,18 +45,18 @@ export const metadata = {
     "Tech Startup India",
     "Employee Onboarding",
   ],
-  metadataBase: new URL("https://hirevia.com"),
+  metadataBase: new URL("https://hirevia.in"),
   openGraph: {
     title: "Hirevia Technologies",
     description:
       "Hirevia Technologies: Revolutionizing HR with modern tech solutions.",
-    url: "https://hirevia.com",
+    url: "https://hirevia.in",
     siteName: "Hirevia Technologies",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "/og/main.jpg",
+        url: "/hireviaimg.png",
         width: 1200,
         height: 630,
         alt: "Hirevia Technologies - HR Tech",
@@ -62,7 +68,7 @@ export const metadata = {
     title: "Hirevia Technologies",
     description:
       "Your partner in HR automation and tech innovation.",
-    images: ["/og/main.jpg"],
+    images: ["/hireviaimg.png"],
     creator: "@hirevia",
   },
   icons: {
@@ -92,7 +98,12 @@ export default function RootLayout({ children }) {
         <meta property="og:site_name" content="Hirevia Technologies" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <meta name="theme-color" content="#000000" />
 
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
 
         <meta name="twitter:site" content="@hirevia" />
         <meta name="twitter:creator" content="@hirevia" />
