@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <main
-      className="min-h-screen h-full text-[var(--color-text)] dark:text-[var(--color-text-dark)] bg-[var(--color-bg-light)] dark:bg-[var(--color-bg-dark)] transition-colors duration-300"
+      className="min-h-screen h-full  mt-5 text-[var(--color-text)] dark:text-[var(--color-text-dark)] bg-[var(--color-bg-light)] dark:bg-[var(--color-bg-dark)] transition-colors duration-300"
     >
       <HeroHeader />
 
