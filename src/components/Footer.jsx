@@ -70,9 +70,23 @@ const Footer = () => {
       </div>
 
       {/* Footer Note */}
-      <div className="border-t border-[var(--color-border)] pt-8 mt-8 text-center text-sm text-[var(--color-muted)]">
+      {/* <div className="border-t border-[var(--color-border)] pt-8 mt-8 text-center text-sm text-[var(--color-muted)]">
         <p className="mt-2">Powered by Future Tech & AI Partnerships</p>
-      </div>
+      </div> */}
+      <div className="border-t border-[var(--color-border)] pt-8 mt-8 text-center text-sm text-[var(--color-muted)]">
+  <p className="mt-2">
+    Powered by <a 
+      href="https://custome-portfolio.vercel.app/" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    
+    ><span className="font-medium">Kways</span> — 
+    <span   className="underline hover:text-[var(--color-text)] transition">
+      Connect with Kways</span>
+    </a>
+  </p>
+</div>
+
     </footer>
   );
 };

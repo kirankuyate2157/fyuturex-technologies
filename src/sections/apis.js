@@ -91,7 +91,7 @@ export const sendMail = (toMail, data) => {
   </body>
   </html>`;
 
-  const url = "https://refine-dashboard-qxpf.onrender.com/api/v1/senttomail/hirevia";
+  const url = "https://refine-dashboard-qxpf.onrender.com/api/v1/senttomail/";
   const dataInfo = {
     to: toMail,
     subject: "Feedback from Hirevia landing page..",
