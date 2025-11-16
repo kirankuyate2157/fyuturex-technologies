@@ -32,7 +32,7 @@ const ContactEMail = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!formData.email || !formData.subject || !formData.message) return;
-    sendMail("kiranrkuyate2024@gmail.com", formData);
+    sendMail("kirankuyate1@gmail.com", formData);
     setTimeout(() => {
       setFormData({
         firstName: "",
