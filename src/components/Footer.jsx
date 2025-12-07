@@ -24,7 +24,7 @@ const Footer = () => {
             Nisarga 9/301,Kalwa west<br />
             Thane City, India 400605<br />
             Email: hr@hirevia.in<br />
-            Phone: +91 98765 43210
+            Phone: +91 86928 83552
           </p>
         </div>
 

@@ -40,20 +40,20 @@ export default function ContactPage() {
             <MapPinIcon className="w-6 h-6 text-[var(--color-primary)]" />
             <p>
               Hirevia Technologies Pvt. Ltd.
-              <br />3rd Floor, TechPark Building,
-              <br />Mumbai, Maharashtra, India
+              <br />Nisarga 9/301 kalwa west
+              <br />Thane - 400605, Maharashtra, India
             </p>
           </div>
           <div className="flex items-center gap-4">
             <PhoneIcon className="w-6 h-6 text-[var(--color-primary)]" />
-            <a href="tel:+919856523567" className="hover:underline">
-              +91 98565 23567
+            <a href="tel:+918692883552" className="hover:underline">
+              +91 86928 83552
             </a>
           </div>
           <div className="flex items-center gap-4">
             <MailIcon className="w-6 h-6 text-[var(--color-primary)]" />
-            <a href="mailto:contact@hirevia.com" className="hover:underline">
-              contact@hirevia.com
+            <a href="mailto:hr@hirevia.in" className="hover:underline">
+              hr@hirevia.in
             </a>
           </div>
         </div>
