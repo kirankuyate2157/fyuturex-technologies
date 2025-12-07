@@ -161,6 +161,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
 
         {/* Google Analytics (optional, replace G-XXXXXXX) */}
         <Script

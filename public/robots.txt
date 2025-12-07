@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://hirevia.com
+
+# Sitemaps
+Sitemap: https://hirevia.com/sitemap.xml
